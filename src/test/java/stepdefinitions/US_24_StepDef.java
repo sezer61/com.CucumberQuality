@@ -1,19 +1,18 @@
 package stepdefinitions;
 
-import io.cucumber.java.AfterAll;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import pages.QualitydemyPage;
-import utilities.Driver;
-import utilities.Reusable;
-import utilities.configReader;
+import utilities.*;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 public class US_24_StepDef {
-    @AfterAll public void tearDown(){Driver.quitDriver();}
+    @AfterMethod
+    public void tearDown(){Driver.getDriver().quit();}
 
     QualitydemyPage qualitydemyPage=new QualitydemyPage();
     @Given("Data entry should be possible in the Outcomes textbox and a new Outcomes textbox should be added with the {string} button.")
@@ -37,7 +36,7 @@ public class US_24_StepDef {
         qualitydemyPage.viewOnFrontend.click();
         Reusable.switchToWindow1("C# programming from zero to hero");
         List<String> outComeList=qualitydemyPage.outcomeList.stream().map(WebElement::getText).collect(Collectors.toList());
-        org.testng.Assert.assertTrue(outComeList.contains("Form Applications"));
+        Assert.assertTrue(outComeList.contains("Form Applications"));
     }
     @Given("Outcomes textbox related to {string} button  should be deleted")
     public void outcomes_textbox_related_to_button_should_be_deleted(String string) {

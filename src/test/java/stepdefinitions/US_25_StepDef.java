@@ -1,16 +1,16 @@
 package stepdefinitions;
 
-import io.cucumber.java.AfterAll;
 import io.cucumber.java.en.Given;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
 import pages.QualitydemyPage;
 import utilities.Driver;
 import utilities.Reusable;
 import utilities.configReader;
 
 public class US_25_StepDef {
-    @AfterAll
-    public void tearDown(){Driver.quitDriver();}
+    @AfterMethod
+    public void tearDown(){Driver.getDriver().quit();}
 
     QualitydemyPage qualitydemyPage=new QualitydemyPage();
     @Given("Check if this is a free course checkbox should be selectable")
@@ -38,7 +38,7 @@ public class US_25_StepDef {
         qualitydemyPage.viewOnFrontend.click();
         Reusable.switchToWindow1("C# programming from zero to hero");
         Reusable.bekle(2);
-        org.testng.Assert.assertTrue(qualitydemyPage.courseFrontendDescription.getText().contains("Free"));
+        Assert.assertTrue(qualitydemyPage.courseFrontendDescription.getText().contains("Free"));
     }
     @Given("The desired price should be able to get entered as a number to course price textbox")
     public void the_desired_price_should_be_able_to_get_entered_as_a_number_to_course_price_textbox() {
@@ -68,7 +68,7 @@ public class US_25_StepDef {
             qualitydemyPage.viewOnFrontend.click();
             Reusable.switchToWindow1("C# programming from zero to hero");
             Reusable.bekle(2);
-            org.testng.Assert.assertTrue(qualitydemyPage.courseFrontendDescription.getText().contains(input));
+            Assert.assertTrue(qualitydemyPage.courseFrontendDescription.getText().contains(input));
         }catch (Exception e) {
             qualitydemyPage.desiredPriceTextbox.sendKeys(input);
             qualitydemyPage.finishBtn.click();
@@ -76,7 +76,7 @@ public class US_25_StepDef {
             qualitydemyPage.viewOnFrontend.click();
             Reusable.switchToWindow1("C# programming from zero to hero");
             Reusable.bekle(2);
-            org.testng.Assert.assertFalse(qualitydemyPage.courseFrontendDescription.getText().contains(input));
+            Assert.assertFalse(qualitydemyPage.courseFrontendDescription.getText().contains(input));
         }
 
 
@@ -99,10 +99,10 @@ public class US_25_StepDef {
         if (!qualitydemyPage.discountCheckbox.isSelected()){
             qualitydemyPage.discountLabel.click();
             Reusable.bekle(2);
-            org.testng.Assert.assertTrue(qualitydemyPage.discountCheckbox.isSelected());
+            Assert.assertTrue(qualitydemyPage.discountCheckbox.isSelected());
         }else {
             qualitydemyPage.discountLabel.click();
-            org.testng.Assert.assertFalse(qualitydemyPage.discountCheckbox.isSelected());
+            Assert.assertFalse(qualitydemyPage.discountCheckbox.isSelected());
         }
 
     }

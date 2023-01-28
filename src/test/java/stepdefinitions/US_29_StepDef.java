@@ -1,23 +1,19 @@
 package stepdefinitions;
 
-import io.cucumber.java.AfterAll;
 import io.cucumber.java.en.Given;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
-import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.AfterMethod;
 import pages.QualitydemyPage;
 import utilities.Driver;
 import utilities.Reusable;
 import utilities.configReader;
 
 public class US_29_StepDef {
-    @AfterAll
-    public void tearDown(){Driver.quitDriver();}
+    @AfterMethod
+    public void tearDown(){Driver.getDriver().quit();}
     QualitydemyPage qualitydemyPage=new QualitydemyPage();
-    @BeforeMethod
-    public void setup(){
 
-    }
 
     @Given("Course title, Short description and description sections should be accessible.")
     public void course_title_short_description_and_description_sections_should_be_accessible() {
