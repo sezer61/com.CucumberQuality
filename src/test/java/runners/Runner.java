@@ -22,7 +22,7 @@ public class Runner {
     /*
         Cucumber'da Runner class'i bos bir class'tir
         Runner class'ini digeer class'lardan farkli kilan
-        ve TestNG'dekix xml doddsyalari gibi calismasini saglayan
+        ve TestNG'deki xml dosyaalari gibi calismasini saglayan
         2 adet notasyon mevcuttur
 
         @RunWith notasyonu projemize cucumber junit dependency eklememizin sebebibidir

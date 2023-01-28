@@ -2,9 +2,7 @@ package stepdefinitions;
 
 import io.cucumber.java.en.Given;
 import pages.QualitydemyPage;
-import utilities.Driver;
-import utilities.Reusable;
-import utilities.configReader;
+import utilities.*;
 public class US_39_StepDef {
 
     QualitydemyPage qualitydemyPage=new QualitydemyPage();
@@ -15,11 +13,10 @@ public class US_39_StepDef {
         qualitydemyPage.login.click();
         qualitydemyPage.email.sendKeys(configReader.getProperty("39vaildEmail"));
         qualitydemyPage.password.sendKeys(configReader.getProperty("vaildPassword"));
-        Reusable.bekle(3);
         qualitydemyPage.loginButton.click();
         qualitydemyPage.searchBx.sendKeys("course");
         qualitydemyPage.searchBxClick.click();
-        Reusable.scrollDown250();
+        Reusable.scrollDown500();
         Reusable.bekle(3);
         qualitydemyPage.searchBxListCourseOne.click();
         qualitydemyPage.courseBuyClick.click();

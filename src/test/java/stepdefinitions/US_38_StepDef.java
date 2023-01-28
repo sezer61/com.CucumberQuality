@@ -3,9 +3,7 @@ package stepdefinitions;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import pages.QualitydemyPage;
-import utilities.Driver;
-import utilities.Reusable;
-import utilities.configReader;
+import utilities.*;
 
 public class US_38_StepDef {
 

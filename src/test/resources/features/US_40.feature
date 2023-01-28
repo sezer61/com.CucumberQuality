@@ -2,7 +2,6 @@ Feature: The functions of the user/sales_report page should work correctly
   @40
   @sez
   @1
-  @team10
   Scenario:The functions of the user/sales_report page should work correctly
     Given Course should be able to get selected from the search box
     Given the course name is clicked, it should redirect to the pagee of the relevant course.

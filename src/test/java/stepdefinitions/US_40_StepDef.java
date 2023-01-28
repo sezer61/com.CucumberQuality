@@ -3,9 +3,8 @@ package stepdefinitions;
 import io.cucumber.java.en.Given;
 import org.testng.Assert;
 import pages.QualitydemyPage;
-import utilities.Driver;
+import utilities.*;
 import utilities.Reusable;
-import utilities.configReader;
 
 public class US_40_StepDef {
     QualitydemyPage qualitydemyPage=new QualitydemyPage();

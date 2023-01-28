@@ -26,7 +26,7 @@ public class Reusable {
 
     public static void scrollDown(){
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
-        js.executeScript("window.scrollBy(0,590)", "");
+        js.executeScript("window.scrollBy(0,700)", "");
     }
     public static void scrollDown1100(){
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
@@ -35,6 +35,10 @@ public class Reusable {
     public static void scrollDown250(){
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("window.scrollBy(0,250)", "");
+    }
+    public static void scrollDown500(){
+        JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
+        js.executeScript("window.scrollBy(0,500)", "");
     }
 
 

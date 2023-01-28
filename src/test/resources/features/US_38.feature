@@ -2,7 +2,6 @@ Feature:Clicking
   @38
   @sez
   @1
-  @team10
   Scenario:Clicking
     Given Clicking the Compare this course with other button should redirect to the Course compare page
     And For paid courses, when the buy now button is pressed, it should redirect to the shopping_cart page.

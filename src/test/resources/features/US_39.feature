@@ -3,7 +3,6 @@ Feature: the functions of the payment page should work correctly
   @39
   @sez
   @1
-  @team10
   Scenario: the functions of the payment page should work correctly
     Given The pay with stripe button should be visible after clicking the stripe logo
     Given the pay with stripe button is clicked, it should redirect to checkout.stripe.com
