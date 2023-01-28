@@ -16,7 +16,7 @@ public class US_33_StepDef {
     @Given("The desired option should be searchable from the Course overview provider dropdown")
     public void the_desired_option_should_be_searchable_from_the_course_overview_provider_dropdown() {
             //The desired option should be searchable from the Course overview provider dropdown
-            //Relevant url should be enterable in Course overview url textbox
+            //Relevant url should be enterablee in Course overview url textbox
             //Image can be uploaded to Course thumbnail
             QualitydemyPage qualitydemyPage_ =new QualitydemyPage();
             Driver.getDriver().get(configReader.getProperty("qadUrl"));
