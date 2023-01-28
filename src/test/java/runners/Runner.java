@@ -20,7 +20,7 @@ public class Runner {
 
 
     /*
-        Cucumber'da Runner class'i bos bir class'tir
+        Cucumber'da Runner class'ii bos bir class'tir
         Runner class'ini diger class'lardan farkli kilan
         ve TestNG'deki xml dosyalari gibi calismasini saglayan
         2 adet notasyon mevcuttur
