@@ -21,15 +21,15 @@ public class Runner {
 
     /*
         Cucumber'da Runner class'i bos bir class'tir
-        Runner class'ini diger class'lardan farkli kilan
-        ve TestNG'deki xml dosyalari gibi calismasini saglayan
-        2 adet notasyon mevcutturr
+        Runner class'ini digeer class'lardan farkli kilan
+        ve TestNG'dekix xml dosyalari gibi calismasini saglayan
+        2 adet notasyon mevcuttur
 
         @RunWith notasyonu projemize cucumber junit dependency eklememizin sebebibidir
-        bu sayede runner class'larimizz cucumber ile calisir
+        bu sayede runner class'larimiz cucumber ile calisir
 
         @CucumberOptions notasyonu ile istedigimiz ozellikleri Runner class'ina ekleyebiliriz
-        Raporlama gibi ekstra option'lari da ileride ekleyecegiz
+        Raporlamax gibiii, ekstra option'lari da ileride ekleyecegiz
         Ancak
         oncelikli gorevi features dosyalari ile stepdefinitions'da bulunan
         Java method'larini ilisiklendirmektir
