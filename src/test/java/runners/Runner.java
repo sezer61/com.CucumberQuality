@@ -26,7 +26,7 @@ public class Runner {
         2 adet notasyon mevcutturr
 
         @RunWith notasyonu projemize cucumber junit dependency eklememizin sebebibidir
-        bu sayede runner class'larimiz cucumber ile calisir
+        bu sayede runner class'larimizz cucumber ile calisir
 
         @CucumberOptions notasyonu ile istedigimiz ozellikleri Runner class'ina ekleyebiliriz
         Raporlama gibi ekstra option'lari da ileride ekleyecegiz
